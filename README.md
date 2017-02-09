@@ -1,6 +1,43 @@
-<div id="container">
- <div class='l'>L</div>
- <div class='o'>O</div>
- <div class='v'>V</div>
- <div class='e'>E</div>
-</div>
+h1 Monster
+
+.monster
+  .face
+    .ears
+    .ears
+    .eyebrow
+    .eye
+    .nose
+    .mouth
+  .body
+    .belly
+  .hands
+    .top
+    .mid
+      div
+      div
+      div
+      div
+    .bottom
+      div
+      div
+      div
+  .hands
+    .top
+    .mid
+      div
+      div
+      div
+      div
+    .bottom
+      div
+      div
+      div
+  .legs
+    div
+    div
+    div
+  .legs
+    div
+    div
+    div
+  
