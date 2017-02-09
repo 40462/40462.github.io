@@ -1,43 +1,75 @@
-@mixin hearts($bg_size, $base_color, $color_1, $color_2) {
-  $dot_size: $bg_size/7.5;
-  background: $base_color;
-  background-image: radial-gradient($color_2 $dot_size*0.5, transparent $dot_size*0.5 + 1px),
-                    radial-gradient($color_2 $dot_size*0.5, transparent $dot_size*0.5 + 1px),
-                    radial-gradient($color_1 $dot_size, transparent $dot_size + 1px),
-                    radial-gradient($color_1 $dot_size, transparent $dot_size + 1px),
-                    linear-gradient(
-                      135deg,
-                      $color_2 6%,
-                      $base_color 6.45%,
-                      $base_color 44%,
-                      transparent 46%,
-                      transparent 63%,
-                      $base_color 63.25%                      
-                    ),
-                    linear-gradient(
-                      45deg,
-                      transparent 39.75%,
-                      $color_1 40.5%,
-                      $color_1 60%,
-                      transparent 0,
-                      transparent 93.25%,
-                      $color_2 94%
-                    );
-  background-size: $bg_size $bg_size;
-  background-position: $dot_size*3.35 $dot_size*3.5,
-                       $dot_size*4.2 $dot_size*3.5,
-                       -$dot_size/2 (-$dot_size/2),
-                       $dot_size (-$dot_size/2),
-                       0 0, 0 0;
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    background-color: #555;
+}
+.test{
+    text-align: center;
+    padding: 40px 0;
+}
+.relove{
+    animation: love  1s infinite linear ;
+    transform: rotate(-20deg) ;
+}
+.lelove{
+    animation: lovee  1s infinite linear ;
+    transform: rotate(-2deg) ;
+     animation-delay: 0.1s;
+}
+.elove{
+    animation: opacityEye  1s infinite linear ;
+}
+.socail {
+	position: fixed;
+	top: 5%;
+	left: 5%;
+	background-image: url("https://scontent-cai1-1.xx.fbcdn.net/v/t1.0-9/13902545_909271545886333_236600210318994659_n.jpg?oh=11db3883ed529ede82f2dfde6d7454c5&oe=58525DA1");
+	height: 60px;
+	width: 60px;
+  cursor: pointer;
+	border-radius: 40px ;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+  z-index: 100
+}
+ .circle {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #FBE8D3;
+border: 1px solid #928A97;
+display: none
+}
+@-webkit-keyframes love{
+    from{
+       transform: rotate(0deg) ;
+        
+        opacity: 0.8
+    }to{
+        transform: rotate(-30deg);
+        opacity: 0.3;
+    }
+}
+@-webkit-keyframes lovee{
+    from{
+       transform: rotate(0deg) ;
+        
+        opacity: 1
+    }to{
+        transform: rotate(-30deg);
+        opacity: 0.3;
+    }
 }
 
-.hearts-bg {
-  height: 100%;
-  @include hearts(122px, #fafafa, #c33, #d77);
-}
-
-body {
-  margin: 0;
-  height: 100vh;
-  background-color: #fafafa;
+@-webkit-keyframes opacityEye{
+    from{
+        
+        opacity: 0.3
+    }to{
+       
+        opacity: 1;
+    }
 }
