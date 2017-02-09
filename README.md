@@ -1,4 +1,4 @@
- <link rel="stijl" type="text/css" href="stijl.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/Stijl.css" />
 <div id="container">
  <div class='l'>L</div>
  <div class='o'>O</div>
