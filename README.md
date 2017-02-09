@@ -1,23 +1,44 @@
 <link rel="stylesheet" href="Stijl.css">
-.centered
-	h4 Will you be My Valentine?
-	input.no(
-		type='checkbox'
-		name='answer'
-		id='No'
-	)
-	label.no(for='No') Nope
-	
-	input.yes(
-		type='checkbox'
-		name='answer'
-		id='Yes'
-	)
-	label.yes(for='Yes') Yup
-	
-	.answer--yes
-	.answer--no
-	
-.signature
-	p Made with <i class="much-heart"></i> by <a href="http://codepen.io/AngelaVelasquez">Angela Velasquez</a>
-	
+<div class="wrapper">
+  
+  <h2>Will chu be my valentine?</h2>
+  
+  <div class="pikachu">
+    
+    <div class="head">
+   
+      <div class="ears left brown"><div class="ears-inside yellow"></div></div>
+      <div class="ears right brown"><div class="ears-inside yellow"></div></div>
+      
+      <div class="face yellow">
+        <span class="eye left brown"></span>
+        <span class="eye right brown"></span>
+        <span class="mouth">w</span>
+        
+        <span class="cachete left"></span>
+        <span class="cachete right"></span>
+        
+      </div>
+    </div>
+    
+    <div class="body yellow">
+      
+      <div class="heart"></div>
+   
+      <div class="paw left yellow"></div>
+      <div class="paw right yellow"></div>
+      
+    </div>
+    
+    <div class="leg left yellow-dark"></div>
+    <div class="leg right yellow-dark"></div>
+    
+    <div class="tail yellow-dark"></div>
+    
+  </div>
+  
+</div>
+
+<div class="signature">
+	<p>Made with <i class="much-heart"></i> by <a href="http://codepen.io/AngelaVelasquez">Angela Velasquez</a></p>
+</div>
