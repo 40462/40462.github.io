@@ -1,4 +1,4 @@
-<link type="text/css" rel="stijl" href="stylesheets/Stijl.css" />
+require("css!./stijl.css");
 <div id="container">
  <div class='l'>L</div>
  <div class='o'>O</div>
