@@ -39,6 +39,4 @@
   
 </div>
 
-<div class="signature">
-	<p>Made with <i class="much-heart"></i> by <a href="http://codepen.io/AngelaVelasquez">Angela Velasquez</a></p>
-</div>
+
