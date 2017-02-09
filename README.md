@@ -1,4 +1,6 @@
 # 40462.github.io
+<html>
+
 <div class="container">
 	<div class="fire">
 		<div id="fireFront" class="fire-front"></div>
@@ -10,3 +12,4 @@
 
 <div class="background"></div>
 <div class="moon"></div>
+</html>
