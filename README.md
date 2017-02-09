@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="Stijl.css">
 <div class="wrapper">
   
-  <h2>Will chu be my valentine?</h2>
+  <h2>Will chu be my valentine Silke?</h2>
   
   <div class="pikachu">
     
