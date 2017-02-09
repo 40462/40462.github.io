@@ -1,43 +1,18 @@
-h1 Monster
+<link rel="stylesheet" href="Stijl.css">
 
-.monster
-  .face
-    .ears
-    .ears
-    .eyebrow
-    .eye
-    .nose
-    .mouth
-  .body
-    .belly
-  .hands
-    .top
-    .mid
-      div
-      div
-      div
-      div
-    .bottom
-      div
-      div
-      div
-  .hands
-    .top
-    .mid
-      div
-      div
-      div
-      div
-    .bottom
-      div
-      div
-      div
-  .legs
-    div
-    div
-    div
-  .legs
-    div
-    div
-    div
-  
+<div class="container">
+  <div class="monster"></div>
+  <div class="hair"></div>
+  <div class="face">
+    <div class="eyes">
+      <div class="iris"></div>
+    </div>
+  </div>
+  <div class="mouth"></div>
+  <div class="drool"></div>
+  <div class="teeth">
+    <div></div>
+    <div></div>
+  </div>
+  <div class="text"></div>
+</div>
