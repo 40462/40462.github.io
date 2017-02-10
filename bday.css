@@ -1,0 +1,167 @@
+$scaleX = 30vmin
+$scaleY = 25vmin
+
+$debug = false
+
+body
+  margin 0
+  overflow hidden
+  font-family 'Alfa Slab One', cursive
+  background #222222
+
+.title
+  color white
+  font-size 15vmin
+  font-weight 700
+  text-align center
+  letter-spacing 1vmin
+
+.scene
+  position fixed
+  top 0
+  left 0
+  width 100vw
+  height 100vh
+  perspective 80000px
+
+@keyframes flicker
+  0%
+    transform skew(-15deg)
+  7%
+    transform skew(15deg)
+    opacity .7
+  19%
+    transform skew(-5deg)
+  31%
+    transform skew(20deg)
+  40%
+    transform skew(-10deg)
+    opacity .9
+  53%
+    transform skew(15deg)
+  59%
+    transform skew(-5deg)
+    opacity .7
+  72%
+    transform skew(10deg)
+  80%
+    transform skew(-5deg)
+    opacity .9
+  91%
+    transform skew(20deg)
+  100%
+    transform skew(-15deg)
+
+.candle
+  width ($scaleX / 15)
+  height ($scaleY / 1.2)
+  background repeating-linear-gradient(45deg, white, white @height / 20, black @height / 20, black @height / 12)
+  background-size cover
+  position absolute
+  top 0
+  left 0
+  border-radius ($scaleY / 10)
+  transform translate3d(-50%, -160%, 2px) rotateY(-115deg)
+  &:before,&:after
+    content ''
+    display block
+  &:before
+    width 0
+    height 0
+    border-left ($scaleX / 28) solid rgba(0,0,0,0)
+    border-right ($scaleX / 28) solid rgba(0,0,0,0)
+    border-bottom ($scaleX / 12) solid white
+    transform translateY(-75%)
+
+  .flame
+    display block
+    width ($scaleX / 15)
+    height ($scaleX / 15)
+    border-radius 100%
+    background #FFCC80
+    position absolute
+    top -3 * @width
+    animation flicker 10s linear infinite
+    transform-origin bottom center
+    &:before
+      content ''
+      display block
+      position absolute
+      top (- $scaleX / 18)
+      left 0
+      border-left ($scaleX / 28) solid rgba(0,0,0,0)
+      border-right ($scaleX / 28) solid rgba(0,0,0,0)
+      border-bottom ($scaleX / 12) solid @background
+
+@keyframes spin
+  0%
+    transform rotateX(-27deg) rotateY(0deg)
+  100%
+    transform rotateX(-27deg) rotateY(360deg)
+
+.cake
+  position absolute
+  bottom $scaleY
+  left 50%
+  transform-style preserve-3d
+  transform rotateX(-27deg) rotateY(-65deg)
+  if $debug
+    animation spin 2s linear infinite
+
+  div
+    width $scaleX
+    position absolute
+    top 0
+    left 0
+    box-shadow 0 0 1px #FFCCDF
+
+  .shadow
+    width 100vh
+    height $scaleX
+    transform-origin 50% 50%
+    transform translate3d(0, - $scaleY / 10, 0) rotateX(-90deg)
+    background linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+    box-shadow none
+
+  .top
+    height $scaleX
+    transform translate(-50%, - ($scaleX + $scaleY) / 2) rotateX(-90deg)
+    background #FFCCDF
+    &:after
+      content ''
+      display block
+      width ($scaleX / 15)
+      height 50%
+      transform translate(325%, -50%) rotate(90deg)
+      position absolute
+      top 50%
+      left 50%
+      background #FFB6D2
+
+  .left
+    height $scaleY
+    transform translate3d(- $scaleX / 2, - $scaleY / 2, $scaleX / 2)
+    background #FFB6D2
+
+  .right
+    width $scaleX
+    height ($scaleY / 3)
+    box-sizing border-box
+    transform translate(0, - 1.5 * $scaleY / 3) rotateY(-90deg)
+    background #FFF0E6
+    border solid #FF87AF
+    border-width  ($scaleY / 10) ($scaleY / 10) 0 0
+    &:before, &:after
+      content ''
+      display block
+      height inherit
+      width inherit
+      background inherit
+      border inherit
+      box-sizing inherit
+      position absolute
+      left 0
+    &:before
+      top ($scaleY / 3) - ($scaleY / 10)
+    &:after
+      top ($scaleY / 1.5) - ($scaleY / 10)
