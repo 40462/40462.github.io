@@ -38,5 +38,7 @@
   </div>
   
 </div>
-
+<div id = "cloud">
+<span class ='shadow'></span>
+</div>
 
