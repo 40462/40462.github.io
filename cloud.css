@@ -51,3 +51,6 @@
 	-moz-border-radius: 50 px;
 	-webkit-border-radius: 50 px;
 }
+body {
+background: #ccc;
+}
