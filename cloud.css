@@ -1,23 +1,23 @@
 #cloud{
-	width : 350 px;
-	height : 120 px;
-	background : #f2f9fe;
-	background : linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background : -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background : -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background : -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	background : -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-	border-radius : 100 px;
-	-webkit-border-radius : 100 px;
-	-moz-border-radius : 100 px;
-	position : relative;
-	margin : 120 px auto 20 px;
+	width: 350 px;
+	height: 120 px;
+	background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	border-radius: 100 px;
+	-webkit-border-radius: 100 px;
+	-moz-border-radius: 100 px;
+	position: relative;
+	margin: 120 px auto 20 px;
 }
 
 #cloud:after, #cloud:before{
 	content: "";
-	position : absolute;
-	background : #f2f9fe;
+	position: absolute;
+	background: #f2f9fe;
 	z-index: -1;
 }
 #cloud:after{
@@ -30,9 +30,9 @@
 	-moz-border-radius: 100 px;
 }
 #cloud:before{
-	width : 180 px;
-	height : 180 px;
-	top : -90 px;
+	width: 180 px;
+	height: 180 px;
+	top: -90 px;
 	right: 50 px;
 	border-radius: 200 px;
 	-webkit-border-radius: 200 px;
@@ -42,9 +42,9 @@
 	width: 350 px;
 	position: absolute;
 	bottom: -10 px;
-	background : #000;
-	z-index : -1;
-	box-shadow : 0 0 25 px 8 px rgba(0,0,0,0.4);
+	background: #000;
+	z-index: -1;
+	box-shadow: 0 0 25 px 8 px rgba(0,0,0,0.4);
 	-moz-box-shadow: 0 0 25 px 8 px rgba(0,0,0,0.4);
 	-webkite-box-shadow: 0 0 25 px 8 px rgba(0,0,0,0.4);
 	border-radius: 50 px;
