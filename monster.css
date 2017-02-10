@@ -10,6 +10,7 @@ div#stage {
     margin:0 auto;
     text-align:center;
     position:relative;
+    padding-top: 300px;
 }
 
 .little-dude {
